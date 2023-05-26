@@ -26,65 +26,66 @@
     </header>
 
 
-    <main>
-        <section>
-            <div>
-                <span>REALIZA TUS CONSULTAS Y TE <br> RESPONDEMOS A LA BREVEDAD</span>
-            </div>
-
-            <div>
-                <form>
-                    <div>
-                        <label for="Nombre"> Nombre <span>*requerido</span></label>
-                        <input type="text" id="Nombre">
-
-                        <label for=""> Email <span>*requerido</span></label>
-                        <input type="email">
-                    </div>
-                    <label for=""> Mensaje <span>*requerido</span></label>
-                    <textarea cols="30" rows="10"></textarea>
-
-                    <button>enviar</button>
-
-                    <p>Completa los campos requeridos</p>
-
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section>
-            <div>
-                <span>registrese para enterarse de <br> todas nuetras promos</span>
-            </div>
-
-            <div>
-                <form action="">
-                    <label for="email-index">ingresar correo electrónico</label>
-                    <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
-                    <input type="submit" value="enviar">
-                </form>
-            </div>
-
-            <div>
-                <button>INSCRIBIRSE</button>
-            </div>
-        </section>
-
+    <!-- inicio Seccion CONTACTO -->
+    <section id="contacto">
+        <h1>CONTACTO</h1>
         <div>
-            <img src="../img/logo_facebook.png" alt="facebook">
-            <img src="../img/logo_instagram.png" alt="instagram">
-            <img src="../img/logo_whatsapp.png" alt="whatsapp">
+            <span>REALIZA TUS CONSULTAS Y TE <br> RESPONDEMOS A LA BREVEDAD</span>
         </div>
 
-        <hr>
-
         <div>
+            <form class="grid">
+                <div class="grid-items">
+                    <label for="Nombre"> Nombre <span class="requerido">*requerido</span></label>
+                    <input required type="text" id="Nombre">
+                </div>
+                <div class="grid-items">
+                    <label for=""> Email <span class="requerido">*requerido</span></label>
+                    <input required type="email">
+                </div>
+                <div class="grid-items">
+                    <label for=""> Mensaje <span class="requerido">*requerido</span></label>
+                    <textarea required cols="30" rows="10"></textarea>
+                </div>
+<div>
+    <button>enviar</button>
+</div>
+
+                <p>Completa los campos requeridos</p>
+
+            </form>
+        </div>
+    </section>
+
+
+
+    <!-- section correo -->
+    <section id="redes">
+        <div class="container">
+            <span class="registrar">registrese para enterarse de <br> todas nuetras promos</span>
+            <form action="">
+                <label for="email-index" class="correo">ingresar correo electrónico</label>
+                <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
+                <input type="submit" value="enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- section redes -->
+    <section id="redes-logos">
+        <div class="container">
+            <img src="../img/icono_insta.png" alt="instagram" class="icono-scapuccio">
+            <img src="../img/icono_face.png" alt="facebook" class="icono-scapuccio">
+            <img src="../img/icono_wsp.png" alt="whatsapp" class="icono-scapuccio">
             <img src="../img/logo-sp.png" alt="icono scapuccio" class="icono-scapuccio">
         </div>
+    </section>
 
-        <span>2023 frigorífico-scapuccio</span>
+    <!-- final -->
+    <footer>
+        <div class="container">
+            <p>&COPY; 2023 frigorífico-scapuccio</p>
+        </div>
     </footer>
 </body>
 

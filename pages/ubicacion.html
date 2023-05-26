@@ -25,61 +25,60 @@
         </div>
     </header>
 
-
-    <main>
-        <section>
-            <h1>Locales Scapuccio</h1>
-            <span>Encontranos en</span>
-            <a href="">MATADEROS</a>
-            <a href="">ITUZAINGO</a>
-            <ul>
-                <li>pilar y tapalqué</li>
-                <li>gelpi y eucaliptus</li>
-            </ul>
+<!-- inicio Seccion ubicacíon -->
+        <section id="ubicacion">
+            <div class="text">
+                <h1>Locales Scapuccio</h1>
+                <div class="text">
+                    <span>Encontranos en</span>
+                    <a href="">MATADEROS</a>
+                    <a href="">ITUZAINGO</a>
+                </div>
+            </div>
         </section>
-        <div>
-            <iframe
+
+        <hr class="linea">
+
+<!-- ubicacíon maps local mataderos  -->
+
+        <section id="maps">
+            <div class="maps-caja">
+                <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.9021640724854!2d-58.50769112344153!3d-34.6571736603248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc944a6bae475%3A0xe49474a2c944d596!2sScapuccio%20Frigorifico!5e0!3m2!1ses-419!2sar!4v1682793664686!5m2!1ses-419!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-    </main>
-
-    <hr>
-
-    <footer>
-        <section>
-            <div>
-                <span>registrese para enterarse de <br> todas nuetras promos</span>
-            </div>
-
-            <div>
-                <form action="">
-                    <label for="email-index">ingresar correo electrónico</label>
-                    <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
-                    <input type="submit" value="enviar">
-                </form>
-            </div>
-
-            <div>
-                <button>INSCRIBIRSE</button>
+                referrerpolicy="no-referrer-when-downgrade" class="maps-local"></iframe>
             </div>
         </section>
 
-        <div>
-            <img src="../img/logo_facebook.png" alt="facebook">
-            <img src="../img/logo_instagram.png" alt="instagram">
-            <img src="../img/logo_whatsapp.png" alt="whatsapp">
+    <hr class="linea">
+
+    <!-- section correo -->
+    <section id="redes">
+        <div class="container">
+            <span class="registrar">registrese para enterarse de <br> todas nuetras promos</span>
+            <form action="">
+                <label for="email-index" class="correo">ingresar correo electrónico</label>
+                <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
+                <input type="submit" value="enviar">
+            </form>
         </div>
+    </section>
 
-        <hr>
-
-        <div>
+    <!-- section redes -->
+    <section id="redes-logos">
+        <div class="container">
+            <img src="../img/icono_insta.png" alt="instagram" class="icono-scapuccio">
+            <img src="../img/icono_face.png" alt="facebook" class="icono-scapuccio">
+            <img src="../img/icono_wsp.png" alt="whatsapp" class="icono-scapuccio">
             <img src="../img/logo-sp.png" alt="icono scapuccio" class="icono-scapuccio">
         </div>
+    </section>
 
-        <span>2023 frigorífico-scapuccio</span>
+    <!-- final -->
+    <footer>
+        <div class="container">
+            <p>&COPY; 2023 frigorífico-scapuccio</p>
+        </div>
     </footer>
 </body>
 

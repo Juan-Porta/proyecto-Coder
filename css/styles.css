@@ -1,3 +1,4 @@
+/*-------------------RESETEO-CSS Y MODELADO GENERAL-------------------------------*/
 * {
     box-sizing: border-box;
 }
@@ -40,6 +41,7 @@ button:hover {
     background-color: black;
 }
 
+/*estilos SECCION HOGAR-------------------------------------- */
 .container {
     max-width: 1024px;
     margin: auto;
@@ -230,9 +232,7 @@ footer p {
 
 }
 
-/*estilos SECCION NOSOTROS */
-
-
+/*estilos SECCION NOSOTROS-------------------------------------- */
 #nosotros {
     display: flex;
     align-items: center;
@@ -305,12 +305,10 @@ footer p {
 
 @media (min-width: 1024px) {
 
-    /* body{
-        ba
-    }; */
-main{
-    background-image: linear-gradient(#FAEDCD, #f5ae07);
-}
+    main {
+        background-image: linear-gradient(#FAEDCD, #f5ae07);
+    }
+
     main div {
         display: flex;
         justify-content: space-around;
@@ -321,7 +319,8 @@ main{
         height: 90vh;
         background-image: linear-gradient(#FAEDCD, #f5ae07);
     }
-    #nosotros .container{
+
+    #nosotros .container {
         display: flex;
         gap: 50px;
     }
@@ -354,19 +353,132 @@ main{
         border-radius: 10px;
         box-shadow: 2px 2px 20px #000;
     }
-#redes form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    #redes .registrar{
+
+    #redes form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #redes .registrar {
         font-size: 2rem;
         font-weight: bold;
     }
 
-footer{
+    footer {
+        font-weight: bold;
+    }
+}
+
+/*estilos SECCION PRODUCTOS--------------------------------------*/
+#productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#productos .products-tam {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#productos #img-products {
+    padding: 10px;
+
+}
+
+#img-products .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#img-products .btn {
+    width: 110px;
+    font-size: 100%;
+}
+
+/*PROXIMO ESPACIO MEDIA Q*/
+
+/**/
+
+/*Estilos SECCION UBICACÍON*/
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient( #f5ae07, #FAEDCD);
+}
+#ubicacion .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3em;
     font-weight: bold;
 }
-
-
+#ubicacion a{
+    background-color: #ffffff;
+    width: 100%;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
 }
+#maps .maps-caja .maps-local{
+    width: 100%;
+    padding: 20px;
+}
+.linea{
+    background-color: #dd9e0a;
+    height: 0.2em;
+    width: 100vh;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+/*Estilos SECCION CONTACTO---------------------------------*/
+#contacto{
+    background-color: #FAEDCD;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+#contacto span{
+    font-weight: bold;
+}
+#contacto .requerido{
+color: red;
+}
+
+#contacto .grid .grid-items{
+    display: grid;
+    gap: 10px;
+    text-align: start;
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+#contacto div button{
+    padding: 10px;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 100%;
+}
+#contacto div button:hover{
+    color: white;
+    background-color: #f5ae07;
+}
+#contacto p{
+    font-weight: bold;
+}
+#contacto p:hover{
+    font-weight: bold;
+    color: #ff0000;
+}
+

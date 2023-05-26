@@ -25,10 +25,11 @@
         </div>
     </header>
 
-
-    <main>
-        <h1>PRODUCTOS SCAPUCCIO</h1>
-        <section>
+<!-- seccion imagenes -->
+    <section id="productos">
+        <section id="container">
+            <h1>PRODUCTOS SCAPUCCIO</h1>
+            <h2>NUESTROS PRODUCTOS</h2>
             <select name="" id="">
                 <option value="">-FILTAR-</option>
                 <option value="">todo</option>
@@ -36,53 +37,49 @@
                 <option value="">porcina</option>
                 <option value="">gallina</option>
             </select>
-
-            <h1>NUESTROS PRODUCTOS</h1>
-
-            <button>anterior</button>
-            <img src="../img/carne-picada.jpg" alt="carne picada">
-            <img src="../img/carne_res.jpg" alt="carne res">
-            <img src="../img/cerdo.jpg" alt="cerdo">
-            <img src="../img/huevos.jpg" alt="huevos de gallina">
-            <img src="../img/pollo_crudo.jpg" alt="pollo crudo">
-            <button>siguiente</button>
         </section>
-    </main>
+        <section id="img-products">
+            <img src="../img/carne-picada.jpg" alt="carne picada" class="products-tam">
+            <img src="../img/carne_res.jpg" alt="carne res" class="products-tam">
+            <img src="../img/cerdo.jpg" alt="cerdo" class="products-tam">
+            <img src="../img/huevos.jpg" alt="huevos de gallina" class="products-tam">
+            <img src="../img/pollo_crudo.jpg" alt="pollo crudo" class="products-tam">
+            <div class="container">
+                <button class="btn">anterior</button>
+                <button class="btn">siguiente</button>
+            </div>
+        </section>
+    </section>
 
     <hr>
 
-    <footer>
-        <section>
-            <div>
-                <span>registrese para enterarse de <br> todas nuetras promos</span>
-            </div>
-
-            <div>
-                <form action="">
-                    <label for="email-index">ingresar correo electrónico</label>
-                    <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
-                    <input type="submit" value="enviar">
-                </form>
-            </div>
-
-            <div>
-                <button>INSCRIBIRSE</button>
-            </div>
-        </section>
-
-        <div>
-            <img src="../img/logo_facebook.png" alt="facebook">
-            <img src="../img/logo_instagram.png" alt="instagram">
-            <img src="../img/logo_whatsapp.png" alt="whatsapp">
+    <!-- section correo -->
+    <section id="redes">
+        <div class="container">
+            <span class="registrar">registrese para enterarse de <br> todas nuetras promos</span>
+            <form action="">
+                <label for="email-index" class="correo">ingresar correo electrónico</label>
+                <input type="email" id="email-index" placeholder="Correo electrónico" autocomplete="on">
+                <input type="submit" value="enviar">
+            </form>
         </div>
+    </section>
 
-        <hr>
-
-        <div>
+    <!-- section redes -->
+    <section id="redes-logos">
+        <div class="container">
+            <img src="../img/icono_insta.png" alt="instagram" class="icono-scapuccio">
+            <img src="../img/icono_face.png" alt="facebook" class="icono-scapuccio">
+            <img src="../img/icono_wsp.png" alt="whatsapp" class="icono-scapuccio">
             <img src="../img/logo-sp.png" alt="icono scapuccio" class="icono-scapuccio">
         </div>
+    </section>
 
-        <span>2023 frigorífico-scapuccio</span>
+    <!-- final -->
+    <footer>
+        <div class="container">
+            <p>&COPY; 2023 frigorífico-scapuccio</p>
+        </div>
     </footer>
 </body>
 
