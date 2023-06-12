@@ -1,0 +1,116 @@
+/*Estilos SECCION CONTACTO---------------------------------*/
+#contacto {
+    background-color: $color-secundario;
+    padding: 15px;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+    span {
+        font-weight: bold;
+    }
+
+    form {
+        .form_items {
+            display: grid;
+            gap: 10px;
+            text-align: start;
+            padding: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+
+            input {
+                background-color: rgb(235, 253, 255);
+                border-radius: 10px;
+                border-color: #801212;
+                border-style: solid;
+            }
+
+            span {
+                color: $color-grad_1;
+            }
+
+            &:hover {
+                color: $color-terceario;
+            }
+
+            textarea {
+                background-color: rgb(235, 253, 255);
+                border-radius: 5px;
+                border-style: solid;
+                border-color: #801212;
+                border-width: 2px;
+            }
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            font-size: 100%;
+
+            &:hover {
+                color: $color-blanco;
+                background-color: $color-terceario;
+            }
+        }
+
+        p {
+            font-weight: bold;
+
+            &hover {
+                font-weight: bold;
+                color: $color-grad_1;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    #contacto {
+        padding-top: 150px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            width: 350px;
+            border-color: $color-terceario;
+            border-style: solid;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .formulario {
+            background: linear-gradient(45deg, #ff2b2b, #ffc43a, #ff2b2b);
+            background-size: 400% 400%;
+            animation: fondo_animado 5s ease infinite;
+            padding: 15px;
+            border-radius: 10px;
+            border-style: solid;
+            border-color: #000;
+            box-shadow: 2px 2px 20px #000;
+            display: flex;
+            flex-direction: column;
+
+            @keyframes fondo_animado {
+                0% {
+                    background-position: 0 50%;
+                }
+
+                50% {
+                    background-position: 100% 50%;
+                }
+
+                100% {
+                    background-position: 0 50%;
+                }
+            }
+        }
+    }
+}

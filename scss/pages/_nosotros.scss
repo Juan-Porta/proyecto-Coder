@@ -1,0 +1,184 @@
+/*--------Estilos SECTION NOSOTROS---------*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .nosotros_main {
+        width: 100vw;
+        background-color: $color-primario-2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+
+
+.nosotros_container {
+    width: 95%;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+    background-size: 400% 400%;
+    animation: fondo_animado 5s ease infinite;
+    text-align: center;
+
+}
+
+.nosotros_container h1 {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $color-secundario;
+    background-color: $color-primario-2;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $color-secundario;
+}
+
+.nosotros_container h2 {
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: $color-secundario;
+    background-color: $color-primario-2;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $color-secundario;
+}
+
+.nosotros_container p {
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: $color-secundario;
+    background-color: $color-primario-2;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $color-secundario;
+}
+
+.nosotros_container img {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+@keyframes fondo_animado {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/*media_nosotros_*/
+@media (min-width: 650px) {
+    main {
+        .nosotros_container {
+            img {
+                width: 590px;
+                border-radius: 30px;
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+@media (min-width: 1024px) {
+    main {
+        .nosotros_main {
+            width: 100vw;
+            background-color: $color-primario;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-top: 150px;
+
+            .nosotros_container {
+                background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+                background-size: 400% 400%;
+                animation: fondo_animado 5s ease infinite;
+                border-radius: 10px;
+                border-style: solid;
+                border-color: $color-secundario;
+                width: 100%;
+                height: 500px;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+
+                h1 {
+                    padding: 5px;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    background-color: $color-secundario;
+                    color: #000;
+                }
+
+                h2 {
+                    color: #000;
+                    padding: 5px;
+                    border-radius: 10px;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    background-color: $color-secundario;
+                }
+
+                p {
+                    width: 95%;
+                    padding: 5px;
+                    border-radius: 10px;
+                    font-weight: bold;
+                    background-color: $color-secundario;
+                    color: #000;
+                    font-size: 100%;
+
+                    span {
+                        color: $color-primario-2;
+                    }
+                }
+
+                @keyframes fondo_animado {
+                    0% {
+                        background-position: 0 50%;
+                    }
+
+                    50% {
+                        background-position: 100% 50%;
+                    }
+
+                    100% {
+                        background-position: 0 50%;
+                    }
+                }
+            }
+        }
+    }
+}

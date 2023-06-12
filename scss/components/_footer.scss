@@ -1,0 +1,72 @@
+/* footer section correo---------------------------------------------*/
+#redes {
+    background-color: $color-primario;
+    text-align: center;
+    color: $color-blanco;
+
+    .container {
+        padding: 100px 0px 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        span {
+            width: 295px;
+            color: $color-primario;
+            background-color: $color-blanco;
+            padding: 15px;
+            border-radius: 20px;
+            font-size: 1.3rem;
+        }
+
+        form {
+            input {
+                background-color: $color-secundario;
+                border-radius: 20px;
+                border-color: $color-blanco;
+                border-style: outset;
+            }
+
+            .correo {
+                display: none;
+            }
+        }
+    }
+
+    &-logos {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #c18400;
+
+        .icono-scapuccio {
+            width: 64px;
+        }
+    }
+}
+
+/*final*/
+footer {
+    background-color: $color-secundario;
+    padding: 20px;
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        font-size: 1em;
+        margin: 0;
+        color: #2c1e00;
+    }
+}
+
+@media (min-width: 1024px) {
+    #redes {
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+    }
+}

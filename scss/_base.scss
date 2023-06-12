@@ -1,0 +1,43 @@
+/*-------------------RESETEO-CSS Y MODELADO GENERAL-------------------------------*/
+$color-blanco: #ffffff;
+$color-primario: #dd9e0a;
+$color-primario-2: #b67f00;
+$color-secundario: #FAEDCD;
+$color-terceario: #f5ae07;
+$color-grad_1: #ff0000;
+$color-grad_2: #ffb300;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /*font-family: 'Bree Serif', serif;
+font-family: 'Playfair Display', serif;*/
+    font-family: 'Bree Serif';
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+ul {
+    list-style: none;
+}
+
+hr {
+    width: 100%;
+    height: 13px;
+    background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+    background-size: 400% 400%;
+    animation: fondo_animado 2s ease infinite;
+}

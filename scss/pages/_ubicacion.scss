@@ -1,0 +1,112 @@
+/*Estilos SECCION UBICACÍON*/
+#ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient($color-terceario, $color-secundario);
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.3em;
+        font-weight: bold;
+
+        a {
+            color: #000;
+            background-color: $color-blanco;
+            width: 100%;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 15px;
+            text-decoration: none;
+
+            &:hover {
+                color: $color-blanco;
+                background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+                background-size: 400% 400%;
+                animation: fondo_animado 5s ease infinite;
+                width: 100%;
+                padding: 5px;
+                margin: 10px;
+                border-radius: 15px;
+                text-decoration: none;
+            }
+        }
+    }
+
+    @keyframes fondo_animado {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+}
+
+#maps {
+    .maps-caja .maps-local {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+.linea {
+    background-color: $color-primario;
+    height: 0.2em;
+    width: 100vh;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+@media (min-width: 1024px) {
+
+    #ubicacion {
+        padding-top: 120px;
+        padding-bottom: 50px;
+
+        div {
+            .text {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+            }
+
+            span {
+                font-size: 2rem;
+                border-radius: 10px;
+                padding: 10px;
+                color: $color-blanco;
+                background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+                background-size: 400% 400%;
+                animation: fondo_animado 5s ease infinite;
+                border-color: $color-blanco;
+                border-style: solid;
+            }
+
+            h1 {
+                color: $color-blanco;
+                border-color: $color-blanco;
+                border-style: solid;
+                border-radius: 15px;
+                padding: 15px;
+
+                &:hover {
+                    background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+                    background-size: 400% 400%;
+                    animation: fondo_animado 5s ease infinite;
+                }
+
+            }
+        }
+    }
+
+}

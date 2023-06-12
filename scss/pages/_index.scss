@@ -1,0 +1,112 @@
+/*estilos SECCION HOGAR- */
+
+#index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 61vh;
+    background: linear-gradient(45deg, $color-grad_1, $color-grad_2, $color-grad_1);
+    background-size: 400% 400%;
+    animation: fondo_animado 2s ease infinite;
+
+    .img-pollo {
+        width: 250px;
+        border-radius: 20px;
+        border-color: $color-blanco;
+        border-style: solid;
+        box-shadow: 2px 2px 20px #312406;
+    }
+
+    @keyframes fondo_animado {
+        0% {
+            background-position: 0 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0 50%;
+        }
+    }
+}
+
+#la-empresa {
+    background-image: linear-gradient($color-secundario, $color-terceario);
+
+    .container {
+        text-align: center;
+        padding: 200px 12px;
+    }
+
+    .img_veh {
+        width: 100%;
+        border-radius: 20px;
+        border-color: $color-blanco;
+        border-style: solid;
+        box-shadow: 2px 2px 20px #312406;
+        display: none;
+        object-fit: cover;
+    }
+
+    .color-resaltado {
+        color: $color-primario;
+    }
+}
+
+
+/*medias*/
+@media (min-width: 1024px) {
+
+    #index {
+        height: 105vh;
+
+        .img-pollo:hover {
+            width: 400px;
+            border-color: #000000;
+            border-style: solid;
+            box-shadow: 2px 2px 20px $color-blanco;
+            transition: 1s;
+        }
+
+        h1 {
+            color: $color-primario-2;
+            font-size: 3rem;
+            background-color: $color-secundario;
+            padding: 10px;
+            border-radius: 10px;
+            border: #000;
+            border-style: solid;
+
+            span {
+                color: #2c1e00;
+            }
+        }
+    }
+
+    #la-empresa {
+        .container {
+            display: flex;
+            justify-content: center;
+
+            .img_veh {
+                display: flex;
+                width: 650px;
+            }
+        }
+
+        .text {
+            width: 50%;
+            max-width: 400px;
+            text-align: initial;
+            padding: 0px 30px;
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+        }
+    }
+
+}
